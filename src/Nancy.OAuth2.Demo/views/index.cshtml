@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "layout.cshtml";
+}
+
+<div class="hero-unit">
+    <h1>Nancy.OAuth2 Demo</h1>
+    <p>
+        This is a demo application to try out the Nancy.OAuth2 package functionality. It implements a basic message board
+        service called Noodle that can be accessed on /noodle and lets you register 3rd party applications that can use
+        Noodle on behalf of the user. Everything uses in-memory storage for now.
+    </p>
+    <p>
+        The code is a bit of a mess and there needs to be some more work done to get the demo in a decent shape. It's all
+        been hacked togehter just as a Proof of Concept.
+    </p>
+    <p>
+        You can access Noodle by navigating to it in the menu and then you can post as the logged in user. You can also
+        send requests to http://[application path]/noodle/api?access_token=[the token} and you will post using an
+        OAuth secured API. On a side note, this should probably be updated to use the Nancy.Authentication.Stateless
+        instead of rolling the OAuthAuthentication class (stateless was added after this code was written)
+    </p>
+    <p>
+        Everything that has to do with the OAuth authorization part is configured under /oauth and you can start getting
+        a token by going to /oauth/authorize quite a bit is hard coded in terms of what you'd be sending in to the
+        various stages of the authorization process, just to make it quick and easy for now. You can have a look in the
+        AuthorizationRequestBinder and AccessTokenRequestBinder to see the hard coded values.
+    </p>
+</div>

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Hosting.Aspnet", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.OAuth2.Demo", "Nancy.OAuth2.Demo\Nancy.OAuth2.Demo.csproj", "{F5C13AE3-3B3A-4473-9AC4-E4293FED8571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.ViewEngines.Razor", "..\dependencies\Nancy\src\Nancy.ViewEngines.Razor\Nancy.ViewEngines.Razor.csproj", "{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.Forms", "..\dependencies\Nancy\src\Nancy.Authentication.Forms\Nancy.Authentication.Forms.csproj", "{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,22 @@ Global
 		{F5C13AE3-3B3A-4473-9AC4-E4293FED8571}.MonoRelease|Any CPU.Build.0 = Release|Any CPU
 		{F5C13AE3-3B3A-4473-9AC4-E4293FED8571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C13AE3-3B3A-4473-9AC4-E4293FED8571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.MonoDebug|Any CPU.ActiveCfg = MonoDebug|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.MonoDebug|Any CPU.Build.0 = MonoDebug|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.MonoRelease|Any CPU.ActiveCfg = MonoRelease|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.MonoRelease|Any CPU.Build.0 = MonoRelease|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C6F51DF-015C-4DB6-B44C-0E5E4F25E2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.MonoDebug|Any CPU.ActiveCfg = MonoDebug|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.MonoDebug|Any CPU.Build.0 = MonoDebug|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.MonoRelease|Any CPU.ActiveCfg = MonoRelease|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.MonoRelease|Any CPU.Build.0 = MonoRelease|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
