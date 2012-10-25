@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.ViewEngines.Razor", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.Forms", "..\dependencies\Nancy\src\Nancy.Authentication.Forms\Nancy.Authentication.Forms.csproj", "{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.Stateless", "..\dependencies\Nancy\src\Nancy.Authentication.Stateless\Nancy.Authentication.Stateless.csproj", "{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,14 @@ Global
 		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.MonoRelease|Any CPU.Build.0 = MonoRelease|Any CPU
 		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B18958-7C8A-4FBA-AF00-3041C34A20CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.MonoDebug|Any CPU.ActiveCfg = MonoDebug|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.MonoDebug|Any CPU.Build.0 = MonoDebug|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.MonoRelease|Any CPU.ActiveCfg = MonoRelease|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.MonoRelease|Any CPU.Build.0 = MonoRelease|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211560C3-FDDF-46D6-AB0C-F3BC04B173B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

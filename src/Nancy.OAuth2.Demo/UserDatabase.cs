@@ -36,5 +36,10 @@ namespace Nancy.OAuth2.Demo
 
             return userRecord.Item3;
         }
+
+        public static DemoUserIdentity GetUserFromToken(string token)
+        {
+            return new DemoUserIdentity { UserName = "admin " };
+        }
     }
 }

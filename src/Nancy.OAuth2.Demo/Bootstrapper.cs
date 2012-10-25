@@ -1,6 +1,7 @@
 ﻿namespace Nancy.OAuth2.Demo
 {
     using Authentication.Forms;
+    using Authentication.Stateless;
     using Cryptography;
     using Nancy.Bootstrapper;
     using Nancy.OAuth2;
@@ -28,10 +29,16 @@
 
             OAuth.Enable();
 
-            OAuthAuthentication.Enable(
-                pipelines, 
-                container.Resolve<IOAuthLogin>()
-            );
+            var configuration =
+                new StatelessAuthenticationConfiguration(nancyContext =>
+                {
+                    var apiKey = 
+                        (string)nancyContext.Request.Query["access_token"].Value;
+
+                    return UserDatabase.GetUserFromToken(apiKey);
+                });
+
+            StatelessAuthentication.Enable(pipelines, configuration);
 
             InMemorySessions.Enable(pipelines);
         }

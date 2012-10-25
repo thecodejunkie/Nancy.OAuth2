@@ -18,7 +18,9 @@ namespace Nancy.OAuth2.Demo
             Post["/"] = parameters =>
             {
                 var model =
-                    this.Bind<NoodleModel>(new[] { "Posted" });
+                    this.Bind<NoodleModel>(new[] { "Posted", "Author" });
+
+                model.Author = Context.CurrentUser.UserName;
 
                 service.Add(model);
 

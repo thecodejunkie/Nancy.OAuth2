@@ -93,6 +93,10 @@
       <Project>{e8b18958-7c8a-4fba-af00-3041c34a20ce}</Project>
       <Name>Nancy.Authentication.Forms</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\dependencies\Nancy\src\Nancy.Authentication.Stateless\Nancy.Authentication.Stateless.csproj">
+      <Project>{211560c3-fddf-46d6-ab0c-f3bc04b173b5}</Project>
+      <Name>Nancy.Authentication.Stateless</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\dependencies\Nancy\src\Nancy.Hosting.Aspnet\Nancy.Hosting.Aspnet.csproj">
       <Project>{15b7f794-0bb2-4b66-ad78-4a951f1209b2}</Project>
       <Name>Nancy.Hosting.Aspnet</Name>
@@ -132,7 +136,6 @@
     <Compile Include="NoodleApiModule.cs" />
     <Compile Include="NoodleModel.cs" />
     <Compile Include="NoodleModule.cs" />
-    <Compile Include="OAuthLogin.cs" />
     <Compile Include="UserDatabase.cs" />
   </ItemGroup>
   <PropertyGroup>

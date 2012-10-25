@@ -38,27 +38,6 @@
         }
     }
 
-    public interface IOAuthLogin
-    {
-        IUserIdentity GetUser(string token);
-    }
-
-    public static class OAuthAuthentication
-    {
-        public static void Enable(IPipelines pipelines, IOAuthLogin login)
-        {
-            pipelines.BeforeRequest += ctx => {
-
-                if (ctx.Request.Query["access_token"].HasValue)
-                {
-                    ctx.CurrentUser = login.GetUser(ctx.Request.Query["access_token"]);
-                }
-
-                return null;
-            };
-        }
-    }
-
     public interface IAccessTokenEndPointService
     {
         AccessTokenResponse CreateAccessTokenResponse(AccessTokenRequest tokenRequest, NancyContext context);
