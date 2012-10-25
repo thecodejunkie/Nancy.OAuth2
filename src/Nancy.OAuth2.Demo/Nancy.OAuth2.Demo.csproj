@@ -126,7 +126,11 @@
     <Compile Include="HomeModule.cs" />
     <Compile Include="IApplicationFactory.cs" />
     <Compile Include="IApplicationStore.cs" />
+    <Compile Include="InMemoryNoodleService.cs" />
     <Compile Include="InMemorySessions.cs" />
+    <Compile Include="INoodleService.cs" />
+    <Compile Include="NoodleApiModule.cs" />
+    <Compile Include="NoodleModel.cs" />
     <Compile Include="NoodleModule.cs" />
     <Compile Include="OAuthLogin.cs" />
     <Compile Include="UserDatabase.cs" />
