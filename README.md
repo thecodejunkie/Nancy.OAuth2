@@ -1,0 +1,1 @@
+Implementation of the OAuth 2 specification, for use with [Nancy](http://nancyfx.org)
